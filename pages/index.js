@@ -1,28 +1,26 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 import Hero from "./components/Hero";
 import ContactUs from "./components/ContactUs";
 import About from "./components/About";
 import Rooms from "./components/Rooms";
-import PhotoGallery from "./components/PhotoGallery";
+import Gallery from "./components/Gallery";
 import Services from "./components/Services";
-import Navbar from "./components/NavBar";
 import Footer from "./components/Footer";
 
 export default function Home() {
     return (
-        <div className={styles.container}>
+        <div>
             <Head>
                 <title>Shepit Pruta</title>
-                <meta name="description" content="Shepit Pruta"/>
+                <meta name="description" content="Shepit Pruta Guest House"/>
                 <link rel="icon" href="../public/assets/logo.JPG"/>
             </Head>
 
-            <Navbar/>
-            <Hero/>
+
+            <Hero heading='Shepit Pruta' message='Quiet apartments by the river for couples, companies and families.'/>
             <About/>
             <Rooms/>
-            <PhotoGallery/>
+            <Gallery/>
             <Services/>
             <ContactUs/>
             <Footer/>
