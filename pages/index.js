@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import Banner from "./components/Banner";
+import Hero from "./components/Hero";
 import ContactUs from "./components/ContactUs";
 import About from "./components/About";
 import Rooms from "./components/Rooms";
@@ -19,7 +19,7 @@ export default function Home() {
             </Head>
 
             <Navbar/>
-            <Banner/>
+            <Hero/>
             <About/>
             <Rooms/>
             <PhotoGallery/>
