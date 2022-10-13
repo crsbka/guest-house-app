@@ -7,6 +7,7 @@ import Gallery from "./components/Gallery";
 import Services from "./components/Services";
 import Footer from "./components/Footer";
 import {GalleryData} from "./components/GalleryData";
+import Photogallery from "./components/Photogallery";
 
 export default function Home() {
     return (
@@ -23,7 +24,7 @@ export default function Home() {
 
             {/*for rooms use API*/}
             <Rooms/>
-
+            <Photogallery/>
             <Gallery slides={GalleryData}/>
             <Services/>
             <ContactUs/>

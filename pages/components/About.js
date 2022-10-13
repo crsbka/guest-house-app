@@ -7,8 +7,6 @@ export default function About() {
         height: "580",
         width: "1030",
 
-
-
     };
 
     return (
