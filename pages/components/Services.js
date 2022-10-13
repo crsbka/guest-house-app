@@ -12,7 +12,6 @@ export default function Services() {
 
             <div className="grid grid-cols-2 gap-1">
                 <AiOutlineWifi size={50}/>
-
                 <RiParkingLine size={50}/>
                 <TbMapPin size={50}/>
                 <MdPets size={50}/>
