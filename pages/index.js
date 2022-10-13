@@ -6,6 +6,7 @@ import Rooms from "./components/Rooms";
 import Gallery from "./components/Gallery";
 import Services from "./components/Services";
 import Footer from "./components/Footer";
+import {GalleryData} from "./components/GalleryData";
 
 export default function Home() {
     return (
@@ -19,8 +20,11 @@ export default function Home() {
 
             <Hero heading='Shepit Pruta' message='Quiet apartments by the river for couples, companies and families.'/>
             <About/>
+
+            {/*for rooms use API*/}
             <Rooms/>
-            <Gallery/>
+
+            <Gallery slides={GalleryData}/>
             <Services/>
             <ContactUs/>
             <Footer/>
