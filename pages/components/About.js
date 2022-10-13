@@ -1,11 +1,25 @@
-import React from 'react'
-import ReactPlayer from 'react-player'
+import React from "react";
+import YouTube from "react-youtube";
 
-export default function About(){
+export default function About() {
+
+    const opts = {
+        height: "580",
+        width: "1030",
+
+
+
+    };
+
     return (
-        <div className="flex items-center justify-center h-screen mb-15 bg-fixed bg-center bg-cover">
-            <h2>About Us</h2>
-            <ReactPlayer url='https://www.youtube.com/watch?v=pCdSsWSXpLE' />
+        <div className='mx-auto'>
+            <h1 className='text-2xl font-bold text-center p-6'>About Us</h1>
+            <div className='relative flex justify-center p-6'>
+                <YouTube videoId="pCdSsWSXpLE"
+                         opts={opts}/>
+
+            </div>
         </div>
-    )
+    );
 }
+
