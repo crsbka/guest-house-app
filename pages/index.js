@@ -9,7 +9,25 @@ import Footer from "./components/Footer";
 import {GalleryData} from "./components/GalleryData";
 import Photogallery from "./components/Photogallery";
 
-export default function Home() {
+
+export const getStaticProps = async () => {
+    const response = await fetch(`http://localhost:3000/api/rooms/`);
+    const data = await response.json();
+
+    if (!data) {
+        return {
+            notFound: true,
+        }
+    }
+
+    return {
+        props: {rooms: data},
+    }
+
+};
+
+
+export default function Home({rooms}) {
     return (
         <div>
             <Head>
@@ -23,7 +41,8 @@ export default function Home() {
             <About/>
 
             {/*for rooms use API*/}
-            <Rooms/>
+            <Rooms rooms={rooms}/>
+
             <Photogallery/>
             <Gallery slides={GalleryData}/>
             <Services/>

@@ -4,8 +4,8 @@ import YouTube from "react-youtube";
 export default function About() {
 
     const opts = {
-        height: "680",
-        width: "1210",
+        height: "580",
+        width: "1010",
 
     };
 

@@ -10,11 +10,24 @@ export default function Services() {
                 Our services
             </h1>
 
-            <div className="grid grid-cols-2 gap-1">
-                <AiOutlineWifi size={50}/>
-                <RiParkingLine size={50}/>
-                <TbMapPin size={50}/>
-                <MdPets size={50}/>
+
+            <div className="grid grid-cols-2 gap-4">
+                <div>
+                    <AiOutlineWifi size={50}/>
+                    <h5>Wifi</h5>
+                </div>
+                <div>
+                    <RiParkingLine size={50}/>
+                    <h5>Parking</h5>
+                </div>
+                <div>
+                    <TbMapPin size={50}/>
+                    <h5>Map</h5>
+                </div>
+                <div>
+                    <MdPets size={50}/>
+                    <h5>Pets</h5>
+                </div>
             </div>
 
         </div>
