@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Hero from "./components/Hero";
 import ContactUs from "./components/ContactUs";
-import About from "./components/About";
+import Video from "./components/Video";
 import Rooms from "./components/Rooms";
 import Gallery from "./components/Gallery";
 import Services from "./components/Services";
@@ -37,16 +37,18 @@ export default function Home({rooms}) {
             </Head>
 
 
-            <Hero heading='Shepit Pruta' message='Quiet apartments by the river for couples, companies and families.'/>
-            <About/>
+            <Hero heading='Shepit Pruta' message='Quiet apartments by the river for couples, companies and families. An incredible place in the heart of the Carpathian Mountains where you will want to return! Make yourself the best gift on vacation —  accommodation in a modern and cozy hotel in Bukovel. The heart freezes and stops for a moment from the beauty,  and rich nature around. Discover something new and special, fall in love with this place that will definitely impress you.'/>
 
-            {/*for rooms use API*/}
+
+            {/*for roomsData use API*/}
             <Rooms rooms={rooms}/>
 
             <Photogallery/>
+
             <Gallery slides={GalleryData}/>
             <Services/>
             <ContactUs/>
+            <Video/>
             <Footer/>
 
         </div>
