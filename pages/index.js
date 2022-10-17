@@ -37,18 +37,18 @@ export default function Home({rooms}) {
             </Head>
 
 
-            <Hero heading='Shepit Pruta' message='Quiet apartments by the river for couples, companies and families. An incredible place in the heart of the Carpathian Mountains where you will want to return! Make yourself the best gift on vacation —  accommodation in a modern and cozy hotel in Bukovel. The heart freezes and stops for a moment from the beauty,  and rich nature around. Discover something new and special, fall in love with this place that will definitely impress you.'/>
+            <Hero heading='Shepit Pruta' message='Quiet apartments by the river for couples, companies and families. An incredible place in the heart of the Carpathian Mountains where you will want to return!'/>
 
 
             {/*for roomsData use API*/}
             <Rooms rooms={rooms}/>
 
+            <Gallery slides={GalleryData}/>
             <Photogallery/>
 
-            <Gallery slides={GalleryData}/>
             <Services/>
-            <ContactUs/>
             <Video/>
+            <ContactUs/>
             <Footer/>
 
         </div>

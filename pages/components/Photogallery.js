@@ -20,9 +20,7 @@ export default function Photogallery() {
         // </div>
 
 
-        <div className='max-w-[1240px] mx-auto'>
-
-        <h1 className='text-2xl font-bold text-center'>Photogallery</h1>
+        <div className='max-w-[1140px] mx-auto'>
 
         <div className="grid grid-cols-3 gap-4 pt-6">
             <div>

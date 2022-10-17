@@ -4,8 +4,13 @@ import YouTube from "react-youtube";
 export default function Video() {
 
     const opts = {
-        height: "580",
-        width: "1010",
+        // height: "580",
+        // width: "1010",
+        position: "absolute",
+        width: "auto",
+        height: "100%",
+        top: 0,
+        left: 0,
 
     };
 

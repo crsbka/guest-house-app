@@ -1,7 +1,6 @@
-import Image from "next/image";
 import React, {useState} from 'react';
-import {FaArrowCircleLeft, FaArrowCircleRight} from 'react-icons/fa';
 import Room from "./Room";
+import Link from "next/link";
 
 
 const Rooms = ({rooms}) => {
@@ -33,6 +32,9 @@ const Rooms = ({rooms}) => {
                 ))}
             </ul>
 
+            <Link href="/">
+            <h2 className='text-2xl font-bold text-center p-6 cursor-pointer'>Show more</h2>
+            </Link>
 
         </div>
     );

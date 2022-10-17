@@ -19,7 +19,7 @@ const Slider = ({ slides }) => {
     }
 
     return (
-        <div id='gallery' className='max-w-[1240px] mx-auto'>
+        <div id='gallery' className='max-w-[1140px] mx-auto'>
             <div className='relative flex justify-center  pt-2'>
 
                 {GalleryData.map((slide, index) => {
