@@ -18,7 +18,7 @@ export default function Services() {
 
                 <div className="grid grid-cols-2 gap-4 p-6">
                     <AiOutlineWifi size={65}/>
-                    <div className="grid grid-col">
+                    <div className="grid grid-col ">
                         <h5 className='text-l font-bold float-left'>Wi-Fi</h5>
                         <p className='text-m float-left'>Free and fast internet available in all rooms throughout the whole territory</p>
                     </div>

@@ -3,7 +3,7 @@ import React, {useState} from "react";
 import {FaArrowCircleLeft, FaArrowCircleRight} from "react-icons/fa";
 
 
-const Room = ({ room }) => {
+const Room = ({room}) => {
 
     const [current, setCurrent] = useState(0);
     const length = room.images.length;
@@ -20,16 +20,13 @@ const Room = ({ room }) => {
     }
 
 
-
     return (
 
-
-        <li key={room.id}>
-            <h1>{room.name}</h1>
-            <h2>{room.description}</h2>
+        <div key={room.id} className="grid grid-cols-2 gap-4">
 
 
-            <div className='max-w-[740px] mx-auto'>
+
+            <div className='grid grid-col'>
                 <div className='relative flex justify-left pt-4'>
 
                     {room.images.map((image, index) => {
@@ -51,8 +48,8 @@ const Room = ({ room }) => {
                                     <Image
                                         src={image}
                                         alt='/'
-                                        width='1440'
-                                        height='600'
+                                        width='1140'
+                                        height='700'
                                         objectFit='cover'
                                     />
                                 )}
@@ -66,7 +63,12 @@ const Room = ({ room }) => {
                     })}
                 </div>
             </div>
-        </li>
+
+            <div className="grid grid-col">
+                <h1 className="font-bold">{room.name}</h1>
+                <p className="content-center">{room.description}</p>
+            </div>
+        </div>
     )
 };
 

@@ -24,7 +24,7 @@ const Rooms = ({rooms}) => {
 
             <h1 className='text-2xl font-bold text-center p-6'>Rooms</h1>
 
-            <ul className="text-center justify-center p-6">
+            <ul className="text-center justify-center p-6 bg-blue-300">
 
 
                 {rooms.map(room => (
