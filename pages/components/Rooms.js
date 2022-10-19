@@ -24,7 +24,7 @@ const Rooms = ({rooms}) => {
 
             <h1 className='text-2xl font-bold text-center p-6'>Rooms</h1>
 
-            <ul className="text-center justify-center p-6 bg-blue-300">
+            <ul className="text-center justify-center p-6">
 
 
                 {rooms.map(room => (
@@ -32,8 +32,8 @@ const Rooms = ({rooms}) => {
                 ))}
             </ul>
 
-            <Link href="/">
-            <h2 className='text-2xl font-bold text-center p-6 cursor-pointer'>Show more</h2>
+            <Link href="/rooms">
+                <h2 className='text-2xl font-bold text-center p-6 cursor-pointer'>Show more</h2>
             </Link>
 
         </div>

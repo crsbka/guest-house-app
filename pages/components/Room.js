@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React, {useState} from "react";
 import {FaArrowCircleLeft, FaArrowCircleRight} from "react-icons/fa";
+import Link from "next/link";
 
 
 const Room = ({room}) => {
@@ -22,11 +23,11 @@ const Room = ({room}) => {
 
     return (
 
-        <div key={room.id} className="grid grid-cols-2 gap-4">
+        <div key={room.id} className="grid grid-cols-3 gap-4">
 
 
 
-            <div className='grid grid-col'>
+            <div className='grid col-span-2'>
                 <div className='relative flex justify-left pt-4'>
 
                     {room.images.map((image, index) => {
@@ -48,8 +49,8 @@ const Room = ({room}) => {
                                     <Image
                                         src={image}
                                         alt='/'
-                                        width='1140'
-                                        height='700'
+                                        width='1040'
+                                        height='600'
                                         objectFit='cover'
                                     />
                                 )}
@@ -65,9 +66,18 @@ const Room = ({room}) => {
             </div>
 
             <div className="grid grid-col">
-                <h1 className="font-bold">{room.name}</h1>
+                <h1 className="font-bold text-3xl">{room.name}</h1>
+                <h2 className="font-bold text-2xl">{room.price}</h2>
                 <p className="content-center">{room.description}</p>
+                <p className="content-center">{room.generalInfo}</p>
+                <button className="py-1 px-2 border bg-white-500 text-white rounded-md shadow-md focus:ring-2 focus:ring-opacity-25">Book
+                    room
+                </button>
             </div>
+
+
+
+
         </div>
     )
 };

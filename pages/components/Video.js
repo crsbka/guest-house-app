@@ -7,8 +7,8 @@ export default function Video() {
         // height: "580",
         // width: "1010",
         position: "absolute",
-        width: "auto",
-        height: "100%",
+        width: "1010",
+        height: "580",
         top: 0,
         left: 0,
 

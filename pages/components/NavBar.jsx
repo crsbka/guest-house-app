@@ -31,11 +31,17 @@ export default function NavBar() {
     return (
         <div style={{backgroundColor: `${color}`}}
              className="fixed left-0 top-0 w-full shadow-md z-10 ease-in duration-300">
-            <div className="max-w-[1240px] m-auto flex items-center p-2 text-white text-lg">
 
-                <Link href="/">
-                    <h1 style={{color: `${textColor}`}} className="font-bold p-5 cursor-pointer">Home</h1></Link>
-                <ul style={{color: `${textColor}`}} className="hidden sm:flex">
+
+            <div className="max-w-[1240px] m-auto flex justify-between items-center p-2 text-white text-lg">
+
+
+
+                <ul style={{color: `${textColor}`}} className="hidden sm:flex uppercase">
+
+                    <li className="p-4 font-bold p-5 cursor-pointer">
+                        <Link href="/">Home</Link>
+                    </li>
                     <li className="p-4">
                         <Link href="/about">About</Link>
                     </li>
@@ -50,6 +56,9 @@ export default function NavBar() {
                     </li>
 
 
+                </ul>
+
+                <ul>
                     <span className="flex float-right">
                     <li className="p-4">
                         <Link href="/"><AiFillFacebook/></Link>
@@ -61,9 +70,8 @@ export default function NavBar() {
                         <Link href="/"><AiOutlineInstagram/></Link>
                     </li>
                 </span>
-
-
                 </ul>
+
                 <button className='px-8 py-2 border'
                         onClick={() => window.location = 'mailto:' + EMAIL_ADDRESS}>Book
                 </button>
