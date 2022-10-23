@@ -10,6 +10,10 @@ export const roomsData = [
             '/assets/rooms/horishok/2.jpg',
             '/assets/rooms/horishok/3.jpg'
         ],
+        priceOptions: [
+            '2 persons - 2300₴',
+            '3 persons - 2700₴'
+        ],
     },
     {
         id: 2,
@@ -23,6 +27,10 @@ export const roomsData = [
             '/assets/rooms/dubok/3.jpg',
             '/assets/rooms/dubok/4.jpg'
         ],
+        priceOptions: [
+            '2 persons - 1400₴',
+            '3 persons - 1800₴'
+        ]
     },
     {
         id: 3,

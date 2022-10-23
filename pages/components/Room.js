@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React, {useState} from "react";
 import {FaArrowCircleLeft, FaArrowCircleRight} from "react-icons/fa";
-import Link from "next/link";
 
 
 const Room = ({room}) => {
@@ -24,7 +23,6 @@ const Room = ({room}) => {
     return (
 
         <div key={room.id} className="grid grid-cols-3 gap-4">
-
 
 
             <div className='grid col-span-2'>
@@ -68,14 +66,37 @@ const Room = ({room}) => {
             <div className="grid grid-col">
                 <h1 className="font-bold text-3xl">{room.name}</h1>
                 <h2 className="font-bold text-2xl">{room.price}</h2>
-                <p className="content-center">{room.description}</p>
-                <p className="content-center">{room.generalInfo}</p>
-                <button className="py-1 px-2 border bg-white-500 text-white rounded-md shadow-md focus:ring-2 focus:ring-opacity-25">Book
+
+
+                {/*map through price options*/}
+
+
+                {room.priceOptions && (
+                <form
+                    action="/">
+                    <label>Select number of guests:</label>
+                    <select name="guests">
+                        {room.priceOptions.map((option, index) => {
+                                return (
+                                    <option
+                                        key={index}>{option}</option>
+                                )
+                            }
+                        )};
+                    </select>
+                </form>
+                    )}
+
+
+                <p className="content-center text-justify p-3">{room.description}</p>
+                <p className="content-center text-justify p-3">{room.generalInfo}</p>
+
+                <button
+                    className="py-1 px-2 border bg-white-500 rounded-md shadow-md hover:bg-blue-400 hover:text-white">Book
                     room
                 </button>
+
             </div>
-
-
 
 
         </div>

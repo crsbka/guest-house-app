@@ -9,7 +9,7 @@ export default function Services() {
             <h1 className='text-2xl font-bold text-center p-6'>
                 Our services
             </h1>
-            <h2 className='text-2xl text-center pb-6'>
+            <h2 className='text-2xl text-center pb-6 italic'>
                 Our goal is that everyone can feel free in our space.
             </h2>
 

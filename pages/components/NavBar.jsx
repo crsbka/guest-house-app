@@ -29,13 +29,12 @@ export default function NavBar() {
 
 
     return (
+
+
         <div style={{backgroundColor: `${color}`}}
              className="fixed left-0 top-0 w-full shadow-md z-10 ease-in duration-300">
 
-
             <div className="max-w-[1240px] m-auto flex justify-between items-center p-2 text-white text-lg">
-
-
 
                 <ul style={{color: `${textColor}`}} className="hidden sm:flex uppercase">
 
@@ -55,10 +54,9 @@ export default function NavBar() {
                         <Link href="/contact">Contact</Link>
                     </li>
 
-
                 </ul>
 
-                <ul>
+                <ul className="justify-end">
                     <span className="flex float-right">
                     <li className="p-4">
                         <Link href="/"><AiFillFacebook/></Link>
