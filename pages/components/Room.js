@@ -22,7 +22,7 @@ const Room = ({room}) => {
 
     return (
 
-        <div key={room.id} className="grid grid-cols-3 gap-4">
+        <div key={room.id} className="grid grid-cols-3 gap-4 mt-4">
 
 
             <div className='grid col-span-2'>
@@ -75,7 +75,7 @@ const Room = ({room}) => {
                 <form
                     action="/">
                     <label>Select number of guests:</label>
-                    <select name="guests">
+                    <select className="font-bold" name="guests">
                         {room.priceOptions.map((option, index) => {
                                 return (
                                     <option
@@ -92,7 +92,8 @@ const Room = ({room}) => {
                 <p className="content-center text-justify p-3">{room.generalInfo}</p>
 
                 <button
-                    className="py-1 px-2 border bg-white-500 rounded-md shadow-md hover:bg-blue-400 hover:text-white">Book
+                    className="w-[160px] justify-self-center py-1 px-2 border rounded-md shadow-lg focus:ring-2 focus:ring-opacity-25
+                    hover:bg-black-600 hover:text-white">Book
                     room
                 </button>
 

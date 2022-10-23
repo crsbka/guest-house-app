@@ -33,7 +33,7 @@ const Rooms = ({rooms}) => {
             </ul>
 
             <Link href="/rooms">
-                <h2 className='text-2xl font-bold text-center p-6 cursor-pointer'>Show more</h2>
+                <h2 className='text-2xl font-bold text-center p-6 cursor-pointer'>Show more rooms</h2>
             </Link>
 
         </div>

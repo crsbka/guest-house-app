@@ -15,7 +15,7 @@ export default function NavBar() {
     useEffect(() => {
             const changeColor = () => {
                 if (window.scrollY >= 90) {
-                    setColor("rgba(250,247,247,0.22)")
+                    setColor("rgba(250,247,247,0.07)")
                     setTextColor("rgba(0,0,0,0.83)");
                 } else {
                     setColor("transparent")
@@ -32,13 +32,13 @@ export default function NavBar() {
 
 
         <div style={{backgroundColor: `${color}`}}
-             className="fixed left-0 top-0 w-full shadow-md z-10 ease-in duration-300">
+             className="fixed left-0 top-0 w-full shadow-md z-10 ease-in duration-300 backdrop-blur-sm bg-white/30">
 
-            <div className="max-w-[1240px] m-auto flex justify-between items-center p-2 text-white text-lg">
+            <div className="max-w-[1240px] m-auto flex justify-between items-center p-2 text-white text-md">
 
                 <ul style={{color: `${textColor}`}} className="hidden sm:flex uppercase">
 
-                    <li className="p-4 font-bold p-5 cursor-pointer">
+                    <li className="p-4 font-bold cursor-pointer">
                         <Link href="/">Home</Link>
                     </li>
                     <li className="p-4">
@@ -70,7 +70,8 @@ export default function NavBar() {
                 </span>
                 </ul>
 
-                <button className='px-8 py-2 border'
+                <button className='px-10 py-2 border rounded-md shadow-md focus:ring-2 focus:ring-opacity-25'
+                        style={{color: `${textColor}`}}
                         onClick={() => window.location = 'mailto:' + EMAIL_ADDRESS}>Book
                 </button>
 
