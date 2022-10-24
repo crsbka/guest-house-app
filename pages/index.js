@@ -10,7 +10,10 @@ import {GalleryData} from "./components/GalleryData";
 import Photogallery from "./components/Photogallery";
 
 
+
 export const getStaticProps = async () => {
+
+
     const response = await fetch(`http://localhost:3000/api/rooms/`);
     const data = await response.json();
 
@@ -37,14 +40,16 @@ export default function Home({rooms}) {
             </Head>
 
 
-            <Hero heading='Shepit Pruta' message='Quiet apartments by the river for couples, companies and families. An incredible place in the heart of the Carpathian Mountains where you will want to return!'/>
+            <Hero heading='Shepit Pruta'
+                  message='Quiet apartments by the river for couples, companies and families. An incredible place in the heart of the Carpathian Mountains where you will want to return!'/>
 
 
             {/*for roomsData use API*/}
             <Rooms rooms={rooms}/>
 
-            <Gallery slides={GalleryData}/>
             <Photogallery/>
+            <Gallery slides={GalleryData}/>
+
 
             <Services/>
             <Video/>

@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import Link from "next/link";
 import {AiOutlineMenu, AiOutlineClose, AiFillFacebook, AiFillYoutube, AiOutlineInstagram} from 'react-icons/ai'
+import {EMAIL_ADDRESS} from "../_app";
 
 
 export default function NavBar() {

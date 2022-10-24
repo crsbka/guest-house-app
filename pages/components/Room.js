@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React, {useState} from "react";
 import {FaArrowCircleLeft, FaArrowCircleRight} from "react-icons/fa";
+import {EMAIL_ADDRESS} from "../_app";
 
 
 const Room = ({room}) => {
@@ -92,7 +93,9 @@ const Room = ({room}) => {
                 <p className="content-center text-justify p-3">{room.generalInfo}</p>
 
                 <button
-                    className="w-[160px] justify-self-center py-1 px-4 border-2 bg-white-500 text-black rounded-md shadow-md focus:ring-2 focus:ring-opacity-25">Book
+                    className="w-[160px] justify-self-center py-1 px-4 border-2 bg-white-500 text-black rounded-md
+                     shadow-md focus:ring-2 focus:ring-opacity-25"
+                    onClick={() => window.location = 'mailto:' + EMAIL_ADDRESS}>Book
                     room
                 </button>
 
