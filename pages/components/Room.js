@@ -92,8 +92,7 @@ const Room = ({room}) => {
                 <p className="content-center text-justify p-3">{room.generalInfo}</p>
 
                 <button
-                    className="w-[160px] justify-self-center py-1 px-2 border rounded-md shadow-lg focus:ring-2 focus:ring-opacity-25
-                    hover:bg-black-600 hover:text-white">Book
+                    className="w-[160px] justify-self-center py-1 px-4 border-2 bg-white-500 text-black rounded-md shadow-md focus:ring-2 focus:ring-opacity-25">Book
                     room
                 </button>
 
