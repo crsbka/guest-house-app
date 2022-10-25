@@ -1,7 +1,7 @@
 import Image from 'next/image'
-import img1 from '../../public/assets/gallery/fireplace.JPG'
-import img2 from '../../public/assets/gallery/window.JPG'
-import img4 from '../../public/assets/gallery/river.jpeg'
+import img1 from '../public/assets/gallery/fireplace.JPG'
+import img2 from '../public/assets/gallery/window.JPG'
+import img4 from '../public/assets/gallery/river.jpeg'
 
 export default function Photogallery() {
     return (

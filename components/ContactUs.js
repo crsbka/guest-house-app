@@ -1,4 +1,4 @@
-import {EMAIL_ADDRESS} from "../_app.js";
+import {EMAIL_ADDRESS} from "../pages/_app.js";
 
 const Contact = () => {
     return (

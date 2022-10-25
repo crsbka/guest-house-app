@@ -1,13 +1,13 @@
 import Head from 'next/head'
-import Hero from "./components/Hero";
-import ContactUs from "./components/ContactUs";
-import Video from "./components/Video";
-import Rooms from "./components/Rooms";
-import Gallery from "./components/Gallery";
-import Services from "./components/Services";
-import Footer from "./components/Footer";
-import {GalleryData} from "./components/GalleryData";
-import Photogallery from "./components/Photogallery";
+import Hero from "../components/Hero";
+import ContactUs from "../components/ContactUs";
+import Video from "../components/Video";
+import Rooms from "../components/Rooms";
+import Gallery from "../components/Gallery";
+import Services from "../components/Services";
+import Footer from "../components/Footer";
+import {GalleryData} from "../components/GalleryData";
+import Photogallery from "../components/Photogallery";
 
 
 
@@ -28,8 +28,6 @@ export const getStaticProps = async () => {
     }
 
 };
-
-
 
 
 

@@ -22,7 +22,9 @@ const Rooms = ({rooms}) => {
     return (
         <div id='rooms' className='max-w-[1240px] mx-auto'>
 
-            <h1 className='text-2xl font-bold text-center p-6'>Rooms</h1>
+            <Link href="/roomsList">
+            <h1 className='text-2xl font-bold text-center p-6 cursor-pointer'>Rooms</h1>
+            </Link>
 
             <ul className="text-center justify-center p-6">
 
@@ -34,7 +36,7 @@ const Rooms = ({rooms}) => {
 
             </ul>
 
-            <Link href="/rooms">
+            <Link href="/roomsList">
                 <h2 className='text-2xl font-bold text-center border-2 justify-items-center p-6 mb-8 cursor-pointer uppercase'>Show
                     more rooms</h2>
             </Link>

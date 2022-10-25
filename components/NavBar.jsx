@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import Link from "next/link";
 import {AiOutlineMenu, AiOutlineClose, AiFillFacebook, AiFillYoutube, AiOutlineInstagram} from 'react-icons/ai'
-import {EMAIL_ADDRESS} from "../_app";
+import {EMAIL_ADDRESS} from "../pages/_app";
 
 
 export default function NavBar() {
@@ -72,6 +72,9 @@ export default function NavBar() {
                         style={{color: `${textColor}`}}
                         onClick={() => window.location = 'mailto:' + EMAIL_ADDRESS}>Book
                 </button>
+
+
+
 
                 {/*Right side*/}
 
