@@ -42,17 +42,14 @@ export default function NavBar() {
                     <li className="p-4 font-bold cursor-pointer">
                         <Link href="/">Home</Link>
                     </li>
-                    <li className="p-4">
-                        <Link href="/about">About</Link>
-                    </li>
-                    <li className="p-4">
-                        <Link href="/rooms">Rooms</Link>
+                    <li className="p-4 smooth-scrolling">
+                        <Link href="/#rooms">Rooms</Link>
                     </li>
                     <li className="p-4">
                         <Link href="/#gallery">Gallery</Link>
                     </li>
                     <li className="p-4">
-                        <Link href="/contact">Contact</Link>
+                        <Link href="/#contact">Contact</Link>
                     </li>
 
                 </ul>

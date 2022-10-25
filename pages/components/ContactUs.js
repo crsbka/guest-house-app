@@ -2,7 +2,7 @@ import {EMAIL_ADDRESS} from "../_app.js";
 
 const Contact = () => {
     return (
-        <div className='m-auto p-60 h-screen custom-img items-center justify-center text-white'>
+        <div id="contact" className='m-auto p-60 h-screen custom-img items-center justify-center text-white'>
             <h1 className='text-2xl font-bold text-center p-4'>Ukraine, Yaremche city, Svobody 183 st. </h1>
             <p className='text-xl text-center p-4'>Phone/Viber: +38 (068) 188-90-66</p>
             <button

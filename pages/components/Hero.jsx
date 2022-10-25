@@ -4,12 +4,8 @@ import {EMAIL_ADDRESS} from "../_app.js";
 
 export default function Hero(props) {
 
-    function handleClick() {
-        console.log("Clicked")
-    }
 
     return (
-
 
         <div className="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img">
 
@@ -24,15 +20,10 @@ export default function Hero(props) {
                   </span>
                 </div>
 
-
                 <p className="py-5 text-xl max-w-[750px]">{props.message}</p>
-
-
 
                     <button className="py-2 px-8 border bg-white-500 text-white rounded-md shadow-md focus:ring-2 focus:ring-opacity-25"
                             onClick={() => window.location = 'mailto:' + EMAIL_ADDRESS}>Book</button>
-
-
 
             </div>
 
