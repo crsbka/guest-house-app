@@ -30,6 +30,9 @@ export const getStaticProps = async () => {
 };
 
 
+
+
+
 export default function Home({rooms}) {
     return (
         <div>
