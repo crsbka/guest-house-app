@@ -8,13 +8,15 @@ import Services from "../components/Services";
 import Footer from "../components/Footer";
 import {GalleryData} from "../components/GalleryData";
 import Photogallery from "../components/Photogallery";
+import Link from "next/link";
+import React from "react";
 
 
 
 export const getStaticProps = async () => {
 
 
-    const response = await fetch(`http://localhost:3000/api/rooms/`);
+    const response = await fetch(`http://localhost:3000/api/rooms?limit=3`);
     const data = await response.json();
 
     if (!data) {
@@ -47,6 +49,11 @@ export default function Home({rooms}) {
 
             {/*for roomsData use API*/}
             <Rooms rooms={rooms}/>
+
+            <Link href="/roomsList">
+                <h2 className='text-2xl font-bold text-center border-2 justify-items-center p-6 mb-8 cursor-pointer uppercase'>Show
+                    more rooms</h2>
+            </Link>
 
             <Photogallery/>
             <Gallery slides={GalleryData}/>

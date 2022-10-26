@@ -29,17 +29,14 @@ const Rooms = ({rooms}) => {
             <ul className="text-center justify-center p-6">
 
 
-                {rooms.slice(0, 3).map(room => (
+                {rooms.map(room => (
                 <Room key={room.name} room={room}/>
                 ))}
 
 
             </ul>
 
-            <Link href="/roomsList">
-                <h2 className='text-2xl font-bold text-center border-2 justify-items-center p-6 mb-8 cursor-pointer uppercase'>Show
-                    more rooms</h2>
-            </Link>
+
 
         </div>
     );

@@ -2,6 +2,7 @@ import Image from "next/image";
 import React, {useState} from "react";
 import {FaArrowCircleLeft, FaArrowCircleRight} from "react-icons/fa";
 import {EMAIL_ADDRESS} from "../pages/_app";
+import Link from "next/link";
 
 
 const Room = ({room}) => {
@@ -73,31 +74,31 @@ const Room = ({room}) => {
 
 
                 {room.priceOptions && (
-                <form
-                    action="/">
-                    <label>Select number of guests:</label>
-                    <select className="font-bold" name="guests">
-                        {room.priceOptions.map((option, index) => {
-                                return (
-                                    <option
-                                        key={index}>{option}</option>
-                                )
-                            }
-                        )};
-                    </select>
-                </form>
-                    )}
+                    <form
+                        action="/">
+                        <label>Select number of guests:</label>
+                        <select className="font-bold" name="guests">
+                            {room.priceOptions.map((option, index) => {
+                                    return (
+                                        <option
+                                            key={index}>{option}</option>
+                                    )
+                                }
+                            )};
+                        </select>
+                    </form>
+                )}
 
 
                 <p className="content-center text-justify p-3">{room.description}</p>
                 <p className="content-center text-justify p-3">{room.generalInfo}</p>
 
-                <button
-                    className="w-[160px] justify-self-center py-1 px-4 border-2 bg-white-500 text-black rounded-md
-                     shadow-md focus:ring-2 focus:ring-opacity-25"
-                    onClick={() => window.location = 'mailto:' + EMAIL_ADDRESS}>Book
-                    room
-                </button>
+                <Link href="/#contact">
+                    <button
+                        className="w-[160px] justify-self-center py-1 px-4 border-2 bg-white-500 text-black rounded-md
+                     shadow-md focus:ring-2 focus:ring-opacity-25">Book room
+                    </button>
+                </Link>
 
             </div>
 

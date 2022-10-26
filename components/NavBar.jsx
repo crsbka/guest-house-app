@@ -19,7 +19,7 @@ export default function NavBar() {
                     setColor("rgba(250,247,247,0.07)")
                     setTextColor("rgba(0,0,0,0.83)");
                 } else {
-                    setColor("transparent")
+                    setColor("rgba(12,23,23,0.45)")
                     setTextColor("#ffffff");
                 }
             };
