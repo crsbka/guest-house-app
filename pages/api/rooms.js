@@ -1,6 +1,5 @@
 import {roomsData} from './data/roomsData';
-import Room from "../../components/Room";
-import React from "react";
+
 
 export default function handler(req, res) {
     const {limit} = req.query

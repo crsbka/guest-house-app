@@ -12,9 +12,7 @@ import Link from "next/link";
 import React from "react";
 
 
-
 export const getStaticProps = async () => {
-
 
     const response = await fetch(`http://localhost:3000/api/rooms?limit=3`);
     const data = await response.json();
@@ -51,13 +49,12 @@ export default function Home({rooms}) {
             <Rooms rooms={rooms}/>
 
             <Link href="/roomsList">
-                <h2 className='text-2xl font-bold text-center border-2 justify-items-center p-6 mb-8 cursor-pointer uppercase'>Show
+                <h2 className='text-2xl font-bold text-center justify-items-center p-6 mb-8 cursor-pointer uppercase'>Show
                     more rooms</h2>
             </Link>
 
             <Photogallery/>
             <Gallery slides={GalleryData}/>
-
 
             <Services/>
             <Video/>
