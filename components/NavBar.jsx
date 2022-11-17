@@ -2,6 +2,8 @@ import React, {useEffect, useState} from "react";
 import Link from "next/link";
 import {AiOutlineMenu, AiOutlineClose, AiFillFacebook, AiFillYoutube, AiOutlineInstagram} from 'react-icons/ai'
 import {EMAIL_ADDRESS} from "../pages/_app";
+import NavLogo from "../public/assets/logo.png";
+import Image from "next/image";
 
 
 export default function NavBar() {
@@ -19,7 +21,7 @@ export default function NavBar() {
                     setColor("rgba(250,247,247,0.07)")
                     setTextColor("rgba(0,0,0,0.83)");
                 } else {
-                    setColor("rgba(12,23,23,0.34)")
+                    setColor("rgba(12,23,23,0.04)")
                     setTextColor("#ffffff");
                 }
             };
@@ -33,22 +35,24 @@ export default function NavBar() {
 
 
         <div style={{backgroundColor: `${color}`}}
-             className="fixed left-0 top-0 w-full shadow-md z-10 ease-in duration-300 backdrop-blur-sm bg-white/30">
+             className="fixed left-0 top-0 w-full shadow-sm z-10 ease-in duration-300 backdrop-blur-sm bg-white/30">
 
-            <div className="max-w-[1240px] m-auto flex justify-between items-center p-2 text-white text-md">
+            <div className="max-w-[1400px] m-auto flex justify-between items-center p-2 text-white text-md">
 
                 <ul style={{color: `${textColor}`}} className="hidden sm:flex uppercase">
 
-                    <li className="p-4 font-bold cursor-pointer">
-                        <Link href="/">Home</Link>
+                    <li className="mr-6 font-bold cursor-pointer">
+                        <Link href="/">
+                            <Image className='rounded-full' src={NavLogo} width={60} height={60} alt="/"/>
+                        </Link>
                     </li>
-                    <li className="p-4 smooth-scrolling">
+                    <li className="p-5 smooth-scrolling">
                         <Link href="/#rooms">Rooms</Link>
                     </li>
-                    <li className="p-4">
+                    <li className="p-5">
                         <Link href="/#gallery">Gallery</Link>
                     </li>
-                    <li className="p-4">
+                    <li className="p-5">
                         <Link href="/#contact">Contact</Link>
                     </li>
 
@@ -56,35 +60,24 @@ export default function NavBar() {
 
                 <ul className="justify-end">
                     <span className="flex float-right">
-                    <li className="p-4">
-                        <Link href="/"><AiFillFacebook/></Link>
+
+                       <li className="p-4 cursor-pointer scale-150">
+                        <Link href="https://www.instagram.com/shepitpruta/"><AiOutlineInstagram/></Link>
                     </li>
-                    <li className="p-4">
-                        <Link href="/"><AiFillYoutube/></Link>
+                    <li className="p-4 cursor-pointer scale-150">
+                        <Link href="https://www.youtube.com/@shepitpruta558"><AiFillYoutube/></Link>
                     </li>
-                    <li className="p-4">
-                        <Link href="/"><AiOutlineInstagram/></Link>
+                     <li className="p-4 cursor-pointer scale-150">
+                        <Link href="https://www.facebook.com/ShepitPruta"><AiFillFacebook/></Link>
                     </li>
                 </span>
                 </ul>
 
-                <button className='px-10 py-2 border rounded-md shadow-md focus:ring-2 focus:ring-opacity-25'
+                <button className='px-20 py-2 border rounded-md shadow-md focus:ring-2 focus:ring-opacity-25'
                         style={{color: `${textColor}`}}
-                        onClick={() => window.location = 'mailto:' + EMAIL_ADDRESS}>Book
+                        onClick={() => window.location = 'mailto:' + EMAIL_ADDRESS}>BOOK
                 </button>
 
-
-
-
-                {/*Right side*/}
-
-                {/*<div className="">*/}
-                {/*    <ul style={{color: `${textColor}`}} className="hidden sm:flex max-w-[540px] flex  p-2 float-right">*/}
-
-                {/*    </ul>*/}
-
-
-                {/*</div>*/}
 
 
                 {/*Mobile Button*/}
