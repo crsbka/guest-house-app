@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "bootstrap": "^5.2.3",
+    "mdb-react-ui-kit": "^5.0.0",
+    "mdb-ui-kit": "^6.0.1",
     "next": "12.3.1",
     "next-videos": "^1.5.0",
     "react": "18.2.0",

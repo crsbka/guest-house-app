@@ -53,6 +53,9 @@ export default function NavBar() {
                         <Link href="/#gallery">Gallery</Link>
                     </li>
                     <li className="p-5">
+                        <Link href="/#testimonials">Reviews</Link>
+                    </li>
+                    <li className="p-5">
                         <Link href="/#contact">Contact</Link>
                     </li>
 

@@ -92,12 +92,12 @@ const Room = ({room}) => {
                 <p className="content-center text-justify p-3">{room.description}</p>
                 <p className="content-center text-justify p-3">{room.generalInfo}</p>
 
-                <Link href="/#contact">
-                    <button
-                        className="w-[160px] justify-self-center py-1 px-4 border-2 bg-white-500 text-black rounded-md
-                     shadow-md focus:ring-2 focus:ring-opacity-25">Book room
-                    </button>
-                </Link>
+                {/*<Link href="/#contact">*/}
+                {/*    <button*/}
+                {/*        className="w-[160px] justify-self-center py-1 px-4 border-2 bg-white-500 text-black rounded-md*/}
+                {/*     shadow-md focus:ring-2 focus:ring-opacity-25">Book room*/}
+                {/*    </button>*/}
+                {/*</Link>*/}
 
             </div>
 

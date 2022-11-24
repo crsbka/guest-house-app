@@ -10,6 +10,7 @@ import {GalleryData} from "../components/GalleryData";
 import Photogallery from "../components/Photogallery";
 import Link from "next/link";
 import React from "react";
+import Testimonials from "../components/Testimonials";
 
 
 export const getStaticProps = async () => {
@@ -28,7 +29,6 @@ export const getStaticProps = async () => {
     }
 
 };
-
 
 
 export default function Home({rooms}) {
@@ -50,11 +50,23 @@ export default function Home({rooms}) {
 
             <Link href="/roomsList">
 
-                <button type="button"
-                        className="text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br
-                         focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-900 shadow-sm shadow-teal-500/50
-                         dark:shadow-md dark:shadow-teal-800/70 font-medium rounded-md text-md px-7 py-3.5 text-center mr-2 mb-8
-                         uppercase">Show more rooms</button>
+
+                <div className="grid place-items-center mb-8">
+                    <button className="group relative h-14 w-52 overflow-hidden rounded-lg bg-white text-lg shadow-md border-2">
+                    <div className="absolute inset-0 w-1 bg-teal-700 transition-all duration-[250ms] ease-out
+                        group-hover:w-full"></div>
+                    <span className="relative text-black group-hover:text-white">Show more rooms</span>
+
+                </button>
+                </div>
+
+
+                    {/*<button className="text-white bg-gradient-to-r from-teal-400 via-teal-600 to-teal-700 hover:bg-gradient-to-br*/}
+                    {/*     focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-900 shadow-sm shadow-teal-500/50*/}
+                    {/*     dark:shadow-md dark:shadow-teal-800/70 font-medium rounded-md text-md px-7 py-3.5 text-center mr-2 mb-8*/}
+                    {/*     uppercase">Show more rooms*/}
+                    {/*</button>*/}
+
 
                 {/*<button className='text-2xl font-bold text-center justify-items-center p-6 mb-8 cursor-pointer uppercase border'>Show*/}
                 {/*    more rooms</button>*/}
@@ -65,6 +77,7 @@ export default function Home({rooms}) {
 
             <Services/>
             <Video/>
+            <Testimonials/>
             <ContactUs/>
             <Footer/>
 

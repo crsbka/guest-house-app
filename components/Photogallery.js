@@ -9,14 +9,14 @@ const Photogallery = () => {
     const [showModal, setShowModal] = useState(false);
 
     return (
-        <div id='gallery' className='max-w-[1520px] mx-auto bg-[#152323FF]'>
+        <div id='gallery' className='max-w-[1520px] mx-auto bg-[#101212]'>
             <div className='max-w-[1200px] mx-auto'>
                 <h1 className='text-2xl font-bold text-center p-4 text-white'>Photogallery</h1>
-                <div className="grid grid-flow-col gap-4 mt-6 relative flex justify-center text-lg text-white">Our house is located
+                <div className="grid grid-flow-col gap-4 mt-2 relative flex justify-center text-lg text-white">Our house is located
                     1.5 km from the
                     city center on the banks of the Prut River.
                 </div>
-                <div className="grid grid-flow-col mt-4 gap-4 mb-6 relative flex justify-center text-lg text-white">On the
+                <div className="grid grid-flow-col gap-4 mb-4 relative flex justify-center text-lg text-white">On the
                     territory there are various
                     recreation areas, gazebos, barbecues, darts.
                 </div>
