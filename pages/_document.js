@@ -15,10 +15,11 @@ export default function Document() {
                     crossOrigin='true'
                 />
 
-                <link href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap"
-                      rel="stylesheet"
 
-                />
+                <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Permanent+Marker&family=Prosto+One&family=Roboto:ital,wght@0,100;0,400;1,400&family=Sedgwick+Ave&display=swap"
+                      rel="stylesheet"/>
+
+
             </Head>
             <body>
             <Main/>

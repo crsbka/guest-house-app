@@ -1,28 +1,22 @@
 import React from "react";
-import YouTube from "react-youtube";
 
 export default function Video() {
 
-    const opts = {
-        // height: "580",
-        // width: "1010",
-        position: "absolute",
-        width: "1010",
-        height: "580",
-        top: 0,
-        left: 0,
-
-    };
 
     return (
-        <div className='mx-auto'>
+        <div className='mx-auto max-w-[1010px]'>
             <h1 className='text-2xl font-bold text-center p-6'>Video</h1>
-            <div className='relative flex justify-center p-6'>
-                <YouTube videoId="pCdSsWSXpLE"
-                         opts={opts}/>
+
+
+            <div className="aspect-w-16 aspect-h-9 mb-8">
+
+                <iframe src="https://www.youtube.com/embed/pCdSsWSXpLE" frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen/>
 
             </div>
+
         </div>
     );
 }
+
 

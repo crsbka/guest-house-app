@@ -58,9 +58,11 @@ export default function NavBar() {
 
                 </ul>
 
+                <span>
                 <ul className="justify-end">
                     <span className="flex float-right">
 
+<span className="flex float-right px-10">
                        <li className="p-4 cursor-pointer scale-150">
                         <Link href="https://www.instagram.com/shepitpruta/"><AiOutlineInstagram/></Link>
                     </li>
@@ -70,14 +72,20 @@ export default function NavBar() {
                      <li className="p-4 cursor-pointer scale-150">
                         <Link href="https://www.facebook.com/ShepitPruta"><AiFillFacebook/></Link>
                     </li>
-                </span>
-                </ul>
+   </span>
 
-                <button className='px-20 py-2 border rounded-md shadow-md focus:ring-2 focus:ring-opacity-25'
+                     <li>
+                <button className='px-16 py-2 border rounded-md shadow-md focus:ring-2 focus:ring-opacity-25'
                         style={{color: `${textColor}`}}
                         onClick={() => window.location = 'mailto:' + EMAIL_ADDRESS}>BOOK
                 </button>
+                      </li>
 
+                    </span>
+            </ul>
+
+
+        </span>
 
 
                 {/*Mobile Button*/}

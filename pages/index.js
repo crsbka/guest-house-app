@@ -49,8 +49,15 @@ export default function Home({rooms}) {
             <Rooms rooms={rooms}/>
 
             <Link href="/roomsList">
-                <h2 className='text-2xl font-bold text-center justify-items-center p-6 mb-8 cursor-pointer uppercase'>Show
-                    more rooms</h2>
+
+                <button type="button"
+                        className="text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br
+                         focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-900 shadow-sm shadow-teal-500/50
+                         dark:shadow-md dark:shadow-teal-800/70 font-medium rounded-md text-md px-7 py-3.5 text-center mr-2 mb-8
+                         uppercase">Show more rooms</button>
+
+                {/*<button className='text-2xl font-bold text-center justify-items-center p-6 mb-8 cursor-pointer uppercase border'>Show*/}
+                {/*    more rooms</button>*/}
             </Link>
 
             <Photogallery/>
