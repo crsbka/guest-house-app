@@ -72,6 +72,8 @@ const Photogallery = () => {
 
                     ) : null}
 
+
+
                 </div>
             </div>
         </div>

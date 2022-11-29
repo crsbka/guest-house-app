@@ -11,13 +11,14 @@ export default function NavBar() {
     const [color, setColor] = useState("transparent")
     const [textColor, setTextColor] = useState("white")
 
+
     function handleNav() {
         setNav(!nav)
     };
 
     useEffect(() => {
             const changeColor = () => {
-                if (window.scrollY >= 90) {
+                if (window.scrollY >= 700) {
                     setColor("rgba(250,247,247,0.07)")
                     setTextColor("rgba(0,0,0,0.83)");
                 } else {
@@ -62,7 +63,8 @@ export default function NavBar() {
                 </ul>
 
                 <span>
-                <ul className="justify-end">
+                <ul className="justify-end"
+                    style={{color: `${textColor}`}}>
                     <span className="flex float-right">
 
 <span className="flex float-right px-10">
@@ -78,10 +80,22 @@ export default function NavBar() {
    </span>
 
                      <li>
-                <button className='px-16 py-2 border rounded-md shadow-md focus:ring-2 focus:ring-opacity-25'
-                        style={{color: `${textColor}`}}
-                        onClick={() => window.location = 'mailto:' + EMAIL_ADDRESS}>BOOK
+
+
+                    <button className="group relative px-14 py-1 rounded-md shadow-md overflow-hidden text-lg shadow-md border-2"
+                            style={{color: `${textColor}`, borderColor: `${textColor}`}}
+
+                            onClick={() => window.location = 'mailto:' + EMAIL_ADDRESS}>
+                    <div className="absolute inset-0 w-1 bg-teal-700 transition-all duration-[250ms] ease-out
+                        group-hover:w-full"/>
+                    <span className="relative text-white group-hover:text-white"
+                          style={{color: `${textColor}`}}>
+                        Book</span>
                 </button>
+
+
+
+
                       </li>
 
                     </span>
