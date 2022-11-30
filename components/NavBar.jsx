@@ -77,25 +77,20 @@ export default function NavBar() {
                      <li className="p-4 cursor-pointer scale-150">
                         <Link href="https://www.facebook.com/ShepitPruta"><AiFillFacebook/></Link>
                     </li>
-   </span>
+</span>
 
                      <li>
+                    <button
+                        className="group relative px-14 py-1 rounded-md shadow-md overflow-hidden text-lg shadow-md border-2"
+                        style={{color: `${textColor}`, borderColor: `${textColor}`}}
 
-
-                    <button className="group relative px-14 py-1 rounded-md shadow-md overflow-hidden text-lg shadow-md border-2"
-                            style={{color: `${textColor}`, borderColor: `${textColor}`}}
-
-                            onClick={() => window.location = 'mailto:' + EMAIL_ADDRESS}>
+                        onClick={() => window.location = 'mailto:' + EMAIL_ADDRESS}>
                     <div className="absolute inset-0 w-1 bg-teal-700 transition-all duration-[250ms] ease-out
                         group-hover:w-full"/>
                     <span className="relative text-white group-hover:text-white"
                           style={{color: `${textColor}`}}>
                         Book</span>
-                </button>
-
-
-
-
+                    </button>
                       </li>
 
                     </span>
