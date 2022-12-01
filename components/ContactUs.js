@@ -6,7 +6,6 @@ import Link from "next/link";
 import {AiFillFacebook, AiFillYoutube, AiOutlineInstagram} from "react-icons/ai";
 
 
-
 const Contact = () => {
     return (
         <div id="contact" className='m-auto p-8 max-h-[480px] custom-img justify-left text-black grid grid-cols-4'>
@@ -14,7 +13,7 @@ const Contact = () => {
 
             <div className="grid place-items-center p-16">
                 <Image className='rounded-full bg-white object-bottom' src={NavLogo} width={120} height={120} alt="/"/>
-
+                <p className="brand bg-clip-text bold text-transparent bg-gradient-to-r from-lime-50 to-teal-600">Shepit Pruta</p>
 
                 <ul className='inline-flex'>
 
@@ -37,28 +36,25 @@ const Contact = () => {
 
             <div className='p-2'>
 
-<div className='pb-4'>
-                <h1 className='text-l font-bold p-2'>ADDRESS:</h1>
-                <p className='text-l p-2'>Svobody St, 183, Yaremche, Ivano-Frankivsk Oblast, Ukraine, 78500</p>
-</div>
+                <div className='pb-4'>
+                    <h1 className='text-l font-bold p-2'>ADDRESS:</h1>
+                    <p className='text-l p-2'>Svobody St, 183, Yaremche, Ivano-Frankivsk Oblast, Ukraine, 78500</p>
+                </div>
                 <h1 className='text-l font-bold p-2'>BOOKING DEPARTMENT:</h1>
                 <p className='text-l p-2'>+38 (068) 188-90-66</p>
                 <p className='text-l p-2'>{EMAIL_ADDRESS}</p>
 
 
-
-
                 <div className="place-items-center p-2 pt-6">
                     <button className="group relative h-10 w-40 overflow-hidden rounded-lg  text-lg shadow-md border-2"
 
-                        onClick={() => window.location = 'mailto:' + EMAIL_ADDRESS}>
+                            onClick={() => window.location = 'mailto:' + EMAIL_ADDRESS}>
 
                         <div className="absolute inset-0 w-1 bg-teal-700 transition-all duration-[250ms] ease-out
                         group-hover:w-full"/>
                         <span className="relative text-black group-hover:text-white">Email Us</span>
                     </button>
                 </div>
-
 
 
             </div>

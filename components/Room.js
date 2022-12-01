@@ -23,7 +23,7 @@ const Room = ({room}) => {
 
     return (
 
-        <div key={room.id} className="grid grid-cols-3 gap-4 mt-4">
+        <div key={room.id} className="grid md:grid-cols-3 gap-4 mt-4">
 
 
             <div className='grid col-span-2'>

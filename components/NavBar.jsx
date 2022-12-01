@@ -67,7 +67,7 @@ export default function NavBar() {
                     style={{color: `${textColor}`}}>
                     <span className="flex float-right">
 
-<span className="flex float-right px-10">
+<span className="flex float-right px-10 ">
                        <li className="p-4 cursor-pointer scale-150">
                         <Link href="https://www.instagram.com/shepitpruta/"><AiOutlineInstagram/></Link>
                     </li>
@@ -81,7 +81,7 @@ export default function NavBar() {
 
                      <li>
                     <button
-                        className="group relative px-14 py-1 rounded-md shadow-md overflow-hidden text-lg shadow-md border-2"
+                        className="group relative px-14 py-1 rounded-md shadow-md overflow-hidden text-lg shadow-md border-2 "
                         style={{color: `${textColor}`, borderColor: `${textColor}`}}
 
                         onClick={() => window.location = 'mailto:' + EMAIL_ADDRESS}>
@@ -101,6 +101,7 @@ export default function NavBar() {
 
 
                 {/*Mobile Button*/}
+
                 <div className="block sm:hidden z-10" onClick={handleNav}>
                     {nav ? <AiOutlineClose size={20} style={{color: `${textColor}`}}/>
                         : <AiOutlineMenu size={20} style={{color: `${textColor}`}}/>}
