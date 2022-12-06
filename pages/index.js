@@ -3,10 +3,10 @@ import Hero from "../components/Hero";
 import ContactUs from "../components/ContactUs";
 import Video from "../components/Video";
 import Rooms from "../components/Rooms";
-import Gallery from "../components/Gallery";
+import Gallery from "../components/GallerySlider";
 import Services from "../components/Services";
 import Footer from "../components/Footer";
-import {GalleryData} from "../components/GalleryData";
+import {GallerySliderData} from "../components/GallerySliderData";
 import Photogallery from "../components/Photogallery";
 import Link from "next/link";
 import React from "react";
@@ -72,7 +72,7 @@ export default function Home({rooms}) {
             </Link>
 
             <Photogallery/>
-            <Gallery slides={GalleryData}/>
+            <Gallery slides={GallerySliderData}/>
 
             <Services/>
             <Video/>

@@ -63,11 +63,11 @@ export default function NavBar() {
                 </ul>
 
                 <span>
-                <ul className="justify-end"
+                <ul className="justify-end "
                     style={{color: `${textColor}`}}>
                     <span className="flex float-right">
 
-<span className="flex float-right px-10 ">
+<span className="flex float-right px-10">
                        <li className="p-4 cursor-pointer scale-150">
                         <Link href="https://www.instagram.com/shepitpruta/"><AiOutlineInstagram/></Link>
                     </li>
@@ -81,7 +81,7 @@ export default function NavBar() {
 
                      <li>
                     <button
-                        className="group relative px-14 py-1 rounded-md shadow-md overflow-hidden text-lg shadow-md border-2 "
+                        className="group relative px-14 py-1 rounded-md shadow-md overflow-hidden text-lg shadow-md border-2"
                         style={{color: `${textColor}`, borderColor: `${textColor}`}}
 
                         onClick={() => window.location = 'mailto:' + EMAIL_ADDRESS}>
@@ -116,16 +116,16 @@ export default function NavBar() {
 
                     <ul>
                         <li onClick={handleNav} className="p-4 text-2xl hover:text-gray-500">
-                            <Link href="/about">About</Link>
-                        </li>
-                        <li onClick={handleNav} className="p-4 text-2xl hover:text-gray-500">
-                            <Link href="/rooms">Rooms</Link>
+                            <Link href="/#rooms">Rooms</Link>
                         </li>
                         <li onClick={handleNav} className="p-4 text-2xl hover:text-gray-500">
                             <Link href="/#gallery">Gallery</Link>
                         </li>
                         <li onClick={handleNav} className="p-4 text-2xl hover:text-gray-500">
-                            <Link href="/contact">Contact</Link>
+                            <Link href="/#testimonials">Reviews</Link>
+                        </li>
+                        <li onClick={handleNav} className="p-4 text-2xl hover:text-gray-500">
+                            <Link href="/#contact">Contact</Link>
                         </li>
                     </ul>
                 </div>
