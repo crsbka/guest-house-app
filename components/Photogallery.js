@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 import Image from 'next/image'
 import {GalleryData} from "./GalleryData";
-import {GallerySliderData} from "./GallerySliderData";
 
 const Photogallery = () => {
 
@@ -46,7 +45,7 @@ const Photogallery = () => {
                                         <div
                                             className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0
                             z-50 outline-none focus:outline-none bg-zinc-900/80">
-                                            <Image src={modalImg} width={1400} height={700} objectFit="contain"
+                                            <Image src={modalImg} width={1200} height={600} objectFit="contain"
                                                    alt=""
                                                    onClick={() => setModalImg(null)}/>
                                         </div>

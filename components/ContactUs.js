@@ -50,7 +50,7 @@ const Contact = () => {
 
                             onClick={() => window.location = 'mailto:' + EMAIL_ADDRESS}>
 
-                        <div className="absolute inset-0 w-1 bg-teal-700 transition-all duration-[250ms] ease-out
+                        <div className="absolute inset-0 w-0 bg-teal-700 transition-all duration-[200ms] ease-out
                         group-hover:w-full"/>
                         <span className="relative text-black group-hover:text-white">Email Us</span>
                     </button>

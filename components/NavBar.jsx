@@ -18,11 +18,11 @@ export default function NavBar() {
 
     useEffect(() => {
             const changeColor = () => {
-                if (window.scrollY >= 700) {
-                    setColor("rgba(250,247,247,0.07)")
-                    setTextColor("rgba(0,0,0,0.83)");
+                if (window.scrollY >= 70) {
+                    setColor("rgb(16,18,18)")
+                    setTextColor("rgb(207,239,239)");
                 } else {
-                    setColor("rgba(12,23,23,0.04)")
+                    setColor("rgba(12,23,23,0.32)")
                     setTextColor("#ffffff");
                 }
             };
@@ -40,7 +40,7 @@ export default function NavBar() {
 
             <div className="max-w-[1400px] m-auto flex justify-between items-center p-2 text-white text-md">
 
-                <ul style={{color: `${textColor}`}} className="hidden sm:flex uppercase">
+                <ul className="hidden sm:flex uppercase">
 
                     <li className="mr-6 font-bold cursor-pointer">
                         <Link href="/">
@@ -63,10 +63,8 @@ export default function NavBar() {
                 </ul>
 
                 <span>
-                <ul className="justify-end "
-                    style={{color: `${textColor}`}}>
+                <ul className="justify-end hidden sm:flex">
                     <span className="flex float-right">
-
 <span className="flex float-right px-10">
                        <li className="p-4 cursor-pointer scale-150">
                         <Link href="https://www.instagram.com/shepitpruta/"><AiOutlineInstagram/></Link>
@@ -81,15 +79,11 @@ export default function NavBar() {
 
                      <li>
                     <button
-                        className="group relative px-14 py-1 rounded-md shadow-md overflow-hidden text-lg shadow-md border-2"
-                        style={{color: `${textColor}`, borderColor: `${textColor}`}}
-
+                        className="group relative px-14 py-1 rounded-md shadow-md overflow-hidden text-lg shadow-md border-2 "
                         onClick={() => window.location = 'mailto:' + EMAIL_ADDRESS}>
-                    <div className="absolute inset-0 w-1 bg-teal-700 transition-all duration-[250ms] ease-out
+                    <div className="absolute inset-0 w-0 bg-teal-700 transition-all duration-[200ms] ease-out
                         group-hover:w-full"/>
-                    <span className="relative text-white group-hover:text-white"
-                          style={{color: `${textColor}`}}>
-                        Book</span>
+                    <span className="relative text-white group-hover:text-white">Book</span>
                     </button>
                       </li>
 

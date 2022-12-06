@@ -52,8 +52,8 @@ export default function Home({rooms}) {
 
 
                 <div className="grid place-items-center mb-8">
-                    <button className="group relative h-14 w-52 overflow-hidden rounded-lg bg-white text-lg shadow-md border-2">
-                    <div className="absolute inset-0 w-1 bg-teal-700 transition-all duration-[250ms] ease-out
+                    <button className="group relative h-12 w-52 overflow-hidden rounded-lg bg-white text-lg shadow-md border-2">
+                    <div className="absolute inset-0 w-0 bg-teal-700 transition-all duration-[200ms] ease-out
                         group-hover:w-full"/>
                     <span className="relative text-black group-hover:text-white">Show more rooms</span>
                 </button>

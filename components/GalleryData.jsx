@@ -1,6 +1,7 @@
 import img1 from '../public/assets/gallery/fireplace.JPG'
-import img2 from '../public/assets/gallery/window.JPG'
-import img3 from '../public/assets/gallery/river.jpeg'
+import img2 from '../public/assets/gallery/river.jpeg'
+import img3 from '../public/assets/gallery/window.JPG'
+
 
 
 export const GalleryData = [

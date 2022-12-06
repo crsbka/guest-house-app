@@ -5,7 +5,7 @@ import {MdPets} from 'react-icons/md';
 
 export default function Services() {
     return (
-        <div id="services" className='max-w-[1040px] mx-auto justify-center'>
+        <div id="services" className='max-w-[1040px] mx-auto justify-center '>
             <h1 className='text-2xl font-bold text-center p-6'>
                 Our services
             </h1>
